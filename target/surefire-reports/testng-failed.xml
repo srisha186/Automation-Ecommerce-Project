@@ -6,35 +6,13 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="testCases.TC002_VerifyLogin">
-        <methods>
-          <include name="login"/>
-          <include name="tearDown"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- testCases.TC002_VerifyLogin -->
-      <class name="testCases.TC_AddtocartMuliple">
-        <methods>
-          <include name="sumofproducts"/>
-          <include name="tearDown"/>
-          <include name="init"/>
-          <include name="multipleAddCart"/>
-        </methods>
-      </class> <!-- testCases.TC_AddtocartMuliple -->
-      <class name="testCases.TC004_SinglePdtCart">
-        <methods>
-          <include name="singlepdtAdd"/>
-          <include name="tearDown"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- testCases.TC004_SinglePdtCart -->
-      <class name="testCases.TC_VerifyLogout">
+      <class name="testCases.DD_VerifyLogin">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyLogout"/>
           <include name="init"/>
+          <include name="login" invocation-numbers="2"/>
         </methods>
-      </class> <!-- testCases.TC_VerifyLogout -->
+      </class> <!-- testCases.DD_VerifyLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

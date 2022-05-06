@@ -93,7 +93,7 @@ public class AccountLogin extends BasePage {
 		txtField_email.sendKeys(email_address);
 		txtField_password.sendKeys(password);
 		btn_signIn.click();
-		System.out.println("The error message displayed for already registered user : "+error_message.getText());
+		//System.out.println("The error message displayed for already registered user : "+error_message.getText());
 
 		
 	}
