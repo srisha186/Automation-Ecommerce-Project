@@ -6,8 +6,8 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="testCases.DD_VerifyLogin" />
 			<class name="testCases.DD_FinalVerifyRegister" />
+			<class name="testCases.DD_VerifyLogin" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

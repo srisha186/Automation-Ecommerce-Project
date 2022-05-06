@@ -43,6 +43,9 @@ public class AccountLogin extends BasePage {
 	@FindBy(xpath="//h1[contains(text(),'My account')]")
 	public String txt_msg;
 	
+	@FindBy(xpath="//div[@class='alert alert-danger']//parent::ol")
+	public WebElement error_message ;
+	
 	public void login() throws InterruptedException {
 		txtField_email.sendKeys("automationdemo18@gmail.com");
 		txtField_password.sendKeys("@autodemo18");
@@ -84,12 +87,15 @@ public class AccountLogin extends BasePage {
 		forgot_email.sendKeys("automationdemo18@gmail.com");
 		forgot_Emailsubmit.click();
 		back_toLogin.click();
-		
 	}
+	
 	public void loginParametrized(String email_address, String password) {
 		txtField_email.sendKeys(email_address);
 		txtField_password.sendKeys(password);
 		btn_signIn.click();
+		System.out.println("The error message displayed for already registered user : "+error_message.getText());
+
+		
 	}
 
 }

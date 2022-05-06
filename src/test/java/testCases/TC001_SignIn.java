@@ -1,5 +1,6 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -17,6 +18,8 @@ public class TC001_SignIn extends BaseClass   {
 		SignIn st = new SignIn(driver);
 		st.signIn();
 		System.out.println("signIn clicked");
+		Assert.assertTrue(true, "Authentication");
+		
 		//test.log(LogStatus.INFO, "signIn Clicked");
 
 		/*

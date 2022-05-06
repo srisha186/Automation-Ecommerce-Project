@@ -3,6 +3,7 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import base.BaseClass;
 import pageClasses.AddToCart;
@@ -10,8 +11,9 @@ import pageClasses.AddToCart;
 public class TC004_SinglePdtCart extends BaseClass {
 	
 	@Test(description = "Verify a single product is added successfully")
-	public void addtoCart() throws InterruptedException {
-
+	public void singlepdtAdd() throws InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		System.out.println("softAssert Method Was Started for adding single product to cart");
 		/*SignIn st = new SignIn(driver);
 		st.signIn();
 		//String homepage = driver.getTitle();
@@ -21,12 +23,17 @@ public class TC004_SinglePdtCart extends BaseClass {
 
 		AddToCart add=new AddToCart(driver);
 		add.mouseover();
-		Assert.assertTrue(true,"Product successfully added to your shopping cart");
-		System.out.println("verified Product successfully added to your shopping cart message");
+		softAssert.assertTrue(true);
+
+		softAssert.assertAll();
+				System.out.println("softAssert Method Was Passedwith message Product successfully added to your shopping cart");
+		//Assert.assertTrue(true,"Product successfully added to your shopping cart");
+		//System.out.println("verified Product successfully added to your shopping cart message");
+		//add.seconditem();
 		
-		Assert.assertTrue(true,"T-shirts");
+		/*Assert.assertTrue(true,"T-shirts");
 		System.out.println("verified Tshirt Productpage on Continue");
-        add.seconditem();
+        add.seconditem();*/
 		
 
 		

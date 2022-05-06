@@ -2,6 +2,7 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -13,17 +14,21 @@ public class TC_VerifyLogout extends BaseClass {
 
 	@Test(description = "Verify Log out Functionality")
 	public void verifyLogout() throws InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		System.out.println("softAssert Method Was for Logout Functionality");
+		softAssert.assertTrue(true);
 
 		/*SignIn st = new SignIn(driver);
 		st.signIn();*/
-		AccountLogin log = new AccountLogin(driver);
-		log.login();
-
+		//AccountLogin log = new AccountLogin(driver);
+		//log.login();
 		Signout out = new Signout(driver);
 		out.signOut();
 		
-		Assert.assertTrue(true, "Log in to your customer account");
-		System.out.println("Assert passed, Logged out successfully");
+		softAssert.assertAll();
+		System.out.println("softAssert Method Was Passed for Logout");
+		//Assert.assertTrue(true, "Log in to your customer account");
+		//System.out.println("Assert passed, Logged out successfully");
 	/*	out.getExpectedTitle();
 		
 		Assert.assertEquals(out.getExpectedTitle(),"Login - My Store");

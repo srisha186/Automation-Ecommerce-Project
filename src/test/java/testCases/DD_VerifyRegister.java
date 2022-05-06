@@ -22,7 +22,7 @@ public class DD_VerifyRegister extends BaseClass {
 	
 	
 	
-	@Test(priority=2,dataProvider ="reg",dataProviderClass = Utilities.class)
+	/*@Test(priority=2,dataProvider ="reg",dataProviderClass = Utilities.class)
 	
 	public void register(String txtfirstname,String txtlastname,String txtregisteremail,String txtpassword,
 			String dropdowndays,String dropdownmonths,String dropdownyear,
@@ -32,7 +32,7 @@ public class DD_VerifyRegister extends BaseClass {
 		SignIn st = new SignIn(driver);
 		st.signIn();
 
-		Register regi=new Register(driver);
+	/*	Register regi=new Register(driver);
 		regi.txtField_email.sendKeys("dvgm@gmail.com");
 		regi.btn_create_account.click();
 		regi.paramRegister(txtfirstname, txtlastname, txtregisteremail, txtpassword,
@@ -40,7 +40,7 @@ public class DD_VerifyRegister extends BaseClass {
 				 addressfirstname, addresslastName, addresscompany, txtFieldaddress, txtFieldaddress2,
 				 txtFieldcity, txtFieldpostalcode, txtFieldadditionalinfo,
 				 txtFieldhomephone, txtFieldmobilephone, txtFieldreference);
-	}
+	}*/
 	
 
 	

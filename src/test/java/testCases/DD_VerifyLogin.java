@@ -2,6 +2,7 @@ package testCases;
 
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import base.BaseClass;
 import pageClasses.AccountLogin;
@@ -12,14 +13,19 @@ public class DD_VerifyLogin extends BaseClass {
 
 	@Test(priority=1,dataProvider ="dp",dataProviderClass = Utilities.class,description = "Verify Data Driven Test cases for Login Functionality")
 	public void login(String email_address, String password) throws InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		System.out.println("softAssert Method Was Started");
 
 		SignIn st = new SignIn(driver);
 		st.signIn();
 
 		AccountLogin log = new AccountLogin(driver);
 		log.loginParametrized(email_address, password);
+		softAssert.assertTrue(true);
+		softAssert.assertAll();
+				System.out.println("softAssert Method Was Passed with condition");
+
 	}
-	
 	
 	
 	/*@Test(priority=2,dataProvider ="reg",dataProviderClass = Utilities.class)

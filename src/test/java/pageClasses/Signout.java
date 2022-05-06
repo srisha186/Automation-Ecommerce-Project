@@ -24,14 +24,6 @@ public class Signout extends BasePage {
 		
 	}
 	
-	 public String getExpectedTitle(){
-		 
-		 String expectedtitle=driver.getTitle();
-
-	     return expectedtitle;
-
-	    }
-
 	
 	
 	

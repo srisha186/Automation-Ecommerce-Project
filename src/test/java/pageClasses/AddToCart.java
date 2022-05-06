@@ -61,32 +61,39 @@ public class AddToCart extends BasePage {
 		Actions action = new Actions(driver);
 		action.moveToElement(mouse_women).build().perform();
 		Thread.sleep(3000);
+		System.out.println("Women dresses Selected");
 
 		action.moveToElement(mouse_tops).build().perform();
 		 Thread.sleep(3000);
+			System.out.println("Women dresses--tops was Selected");
+
 
 		action.moveToElement(mouse_tshirt).click().build().perform();
 		Thread.sleep(3000);
+		System.out.println("T shirt was  Selected");
+
 		js = (JavascriptExecutor) driver;
 		//js.executeScript("window.location = 'https://demo.opencart.com/");
 		js.executeScript("window.scrollBy(0, 800);");
 		Thread.sleep(3000);
 		WebDriverWait wait=new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(item_selected));
+		System.out.println("Used Javascript executor and explicit wait");
 
 		action.moveToElement(item_selected).moveToElement(click_addtocart).click().build().perform();
 		btn_continue.click();
-		
+		System.out.println("Add to cart clicked and continue button was clicked from the alert window");
+
 		}
 		
-	public void seconditem() throws InterruptedException {
+	/*public void seconditem() throws InterruptedException {
 		Thread.sleep(3000);
 		Actions action = new Actions(driver);
 
 		action.moveToElement(secondItem_selected).moveToElement(click_addtocart).click().build().perform();
 		
 
-	}
+	}*/
 	// div[@class='clearfix'] //span[@class='cross']
 	/*
 	 * public void checkCart() throws InterruptedException {

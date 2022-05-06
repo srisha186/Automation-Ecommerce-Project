@@ -22,6 +22,9 @@ public class Login extends BasePage {
 	@FindBy(id="SubmitLogin")
 	public WebElement btn_signIn;
 	
+	@FindBy(xpath="//div[@class='alert alert-danger']//parent::ol")
+	public WebElement error_message ;
+	
 	//@FindBy(xpath="//h1[contains(text(),'My account')]")
 	//public String txt_msg;
 	

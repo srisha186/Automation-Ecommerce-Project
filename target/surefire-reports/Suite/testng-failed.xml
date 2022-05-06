@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="base.CustomListeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testCases.TC002_VerifyLogin">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- testCases.TC002_VerifyLogin -->
+      <class name="testCases.TC_AddtocartMuliple">
+        <methods>
+          <include name="sumofproducts"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="multipleAddCart"/>
+        </methods>
+      </class> <!-- testCases.TC_AddtocartMuliple -->
+      <class name="testCases.TC004_SinglePdtCart">
+        <methods>
+          <include name="singlepdtAdd"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- testCases.TC004_SinglePdtCart -->
+      <class name="testCases.TC_VerifyLogout">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLogout"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- testCases.TC_VerifyLogout -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -16,7 +16,6 @@
 
 			<class name="testCases.TC004_SinglePdtCart" />
 			<class name="testCases.TC_AddtocartMuliple" />
-			<class name="testCases.TC007_E2EFunctionality" />
 			<class name="testCases.TC_VerifyLogout" />
 
 		</classes>

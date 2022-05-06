@@ -1,5 +1,6 @@
 package pageClasses;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +26,7 @@ public class Register extends BasePage {
 	@FindBy(xpath="//h3[contains(text(),'Your personal information')]")
 	public WebElement Heading_personalinfo ;
 	
-	@FindBy(id="uniform-id_gender2")
+	@FindBy(xpath="//input[@id='id_gender2']")
 	public WebElement radio_Mrs ;
 	
 	@FindBy(id="customer_firstname")
@@ -101,6 +102,14 @@ public class Register extends BasePage {
 	@FindBy(id="submitAccount")
 	public WebElement btn_register ;
 	
+	@FindBy(xpath="//div[@class='alert alert-danger']//parent::ol")
+	public WebElement error_message ;
+	
+	
+	
+	@FindBy(xpath="//a[@title='Log me out']")
+	public WebElement signout;
+	
 	public void register() {
 		
 		txtField_email.sendKeys("aavgfhyjytrere@gmail.com");
@@ -119,8 +128,9 @@ public class Register extends BasePage {
 		
 		txtField_firstname.sendKeys("automation");
 		txtField_lastname.sendKeys("demo");
-		txtField_registeremail.sendKeys("automatiaaondemo@gmail.com");
-		txtField_password.sendKeys("txtField_password");
+		txtField_registeremail.clear();
+		txtField_registeremail.sendKeys("demo@gmail.com");
+		txtField_password.sendKeys("abcdefg");
 	}
 	public void date() throws InterruptedException {
 		
@@ -153,65 +163,37 @@ public class Register extends BasePage {
 		
 		address_firstname.sendKeys("sri");
 		address_lastName.sendKeys("mathi");
-		address_company.sendKeys("dfdfd");
-		txtField_address.sendKeys("fhghg");
-		txtField_address2.sendKeys("fgfgf");
-		txtField_city.sendKeys("gfgf");
+		address_company.sendKeys("busyQA");
+		txtField_address.sendKeys("Matheson Blvd");
+		txtField_address2.sendKeys("South Millway");
+		txtField_city.sendKeys("Mississauga");
 		
 		Thread.sleep(3000);
 		Select state=new Select(dropdown_state);
 		state.selectByIndex(3);
 		System.out.println("the selected state is: "+state.getOptions().get(3).getText());
 				
-		txtField_postalcode.sendKeys("ffdd");
+		txtField_postalcode.sendKeys("12345");
 		
 		Select country=new Select(dropdown_country);
 		country.getFirstSelectedOption();
-		System.out.println("the selected country is: "+country.getFirstSelectedOption().getText());
+		System.out.println("The selected country is: "+country.getFirstSelectedOption().getText());
 
 		
-		txtField_additionalinfo.sendKeys("fbjbm");
-		txtField_homephone.sendKeys("vbfgf");
-		txtField_mobilephone.sendKeys("sdsfg");
-		txtField_reference.sendKeys("sddfd");
+		txtField_additionalinfo.sendKeys("Hello");
+		txtField_homephone.sendKeys("1245678");
+		txtField_mobilephone.sendKeys("9876554");
+		txtField_reference.clear();
+		txtField_reference.sendKeys("John");
 		btn_register.click();
-	}
+		Thread.sleep(3000);
+		System.out.println("The error message displayed for already registered user : "+error_message.getText());
+		//signout.click();
+		/*Alert alert=driver.switchTo().alert();
+		String alertmsg=driver.switchTo().alert().getText();
+		System.out.println("The alert message displayed are" +alertmsg);
+		alert.dismiss();*/
 	
-	public void paramRegister(String txtfirstname,String txtlastname,String txtregisteremail,String txtpassword,
-			String dropdowndays,String dropdownmonths,String dropdownyear,
-			String addressfirstname,String addresslastName,String addresscompany,String txtFieldaddress,String txtFieldaddress2,
-			String txtFieldcity,String txtFieldpostalcode,String txtFieldadditionalinfo,
-			String txtFieldhomephone,String txtFieldmobilephone,String txtFieldreference) {
-		
-		txtField_firstname.sendKeys(txtfirstname);
-		txtField_lastname.sendKeys(txtlastname);
-		txtField_registeremail.sendKeys(txtregisteremail);
-		txtField_password.sendKeys(txtpassword);	
-		
-		WebDriverWait wait=new WebDriverWait(driver,20);
-		wait.until(ExpectedConditions.elementToBeSelected(dropdown_dob_days));
-		
-		Select days=new Select(dropdown_dob_days);
-		days.selectByValue("4");
-		
-		Select months=new Select(dropdown_dob_months);
-		months.selectByValue("4");
-		
-		Select year=new Select(dropdown_dob_year);
-		year.selectByValue("2020");
-		
-		address_firstname.sendKeys(addressfirstname);
-		address_lastName.sendKeys(addresslastName);
-		address_company.sendKeys(addresscompany);
-		txtField_address.sendKeys(txtFieldaddress);
-		txtField_address2.sendKeys(txtFieldaddress2);
-		txtField_city.sendKeys(txtFieldcity);
-		
-		txtField_postalcode.sendKeys(txtFieldpostalcode);
-		txtField_additionalinfo.sendKeys(txtFieldadditionalinfo);
-		txtField_homephone.sendKeys(txtFieldhomephone);
-		txtField_mobilephone.sendKeys(txtFieldmobilephone);
-		txtField_reference.sendKeys(txtFieldreference);
 	}
 	
 	public void paramRegister2(String txtfirstname,String txtlastname,String txtregisteremail,String txtpassword,
@@ -221,6 +203,7 @@ public class Register extends BasePage {
 		
 		txtField_firstname.sendKeys(txtfirstname);
 		txtField_lastname.sendKeys(txtlastname);
+		txtField_registeremail.clear();
 		txtField_registeremail.sendKeys(txtregisteremail);
 		txtField_password.sendKeys(txtpassword);	
 		
@@ -235,7 +218,8 @@ public class Register extends BasePage {
 		
 		Select year=new Select(dropdown_dob_year);
 		year.selectByValue("2020");*/
-		
+		address_firstname.clear();
+		address_lastName.clear();
 		address_firstname.sendKeys(addressfirstname);
 		address_lastName.sendKeys(addresslastName);
 		address_company.sendKeys(addresscompany);
@@ -261,10 +245,49 @@ public class Register extends BasePage {
 		txtField_additionalinfo.sendKeys(txtFieldadditionalinfo);
 		txtField_homephone.sendKeys(txtFieldhomephone);
 		txtField_mobilephone.sendKeys(txtFieldmobilephone);
+		txtField_reference.clear();
 		txtField_reference.sendKeys(txtFieldreference);
 		btn_register.click();
-	}
-
+		System.out.println("The error meassage Displayed after registration is:" +error_message.getText());
+	}	
+	
+	/*
+	public void paramRegister(String txtfirstname,String txtlastname,String txtregisteremail,String txtpassword,
+			String dropdowndays,String dropdownmonths,String dropdownyear,
+			String addressfirstname,String addresslastName,String addresscompany,String txtFieldaddress,String txtFieldaddress2,
+			String txtFieldcity,String txtFieldpostalcode,String txtFieldadditionalinfo,
+			String txtFieldhomephone,String txtFieldmobilephone,String txtFieldreference) {
+		
+		txtField_firstname.sendKeys(txtfirstname);
+		txtField_lastname.sendKeys(txtlastname);
+		txtField_registeremail.sendKeys(txtregisteremail);
+		txtField_password.sendKeys(txtpassword);	
+		
+		WebDriverWait wait=new WebDriverWait(driver,5);
+		wait.until(ExpectedConditions.elementToBeSelected(dropdown_dob_days));
+		
+		Select days=new Select(dropdown_dob_days);
+		days.selectByValue("4");
+		
+		Select months=new Select(dropdown_dob_months);
+		months.selectByValue("4");
+		
+		Select year=new Select(dropdown_dob_year);
+		year.selectByValue("2020");
+		
+		address_firstname.sendKeys(addressfirstname);
+		address_lastName.sendKeys(addresslastName);
+		address_company.sendKeys(addresscompany);
+		txtField_address.sendKeys(txtFieldaddress);
+		txtField_address2.sendKeys(txtFieldaddress2);
+		txtField_city.sendKeys(txtFieldcity);
+		
+		txtField_postalcode.sendKeys(txtFieldpostalcode);
+		txtField_additionalinfo.sendKeys(txtFieldadditionalinfo);
+		txtField_homephone.sendKeys(txtFieldhomephone);
+		txtField_mobilephone.sendKeys(txtFieldmobilephone);
+		txtField_reference.sendKeys(txtFieldreference);
+	}*/
 	
 }
 	
