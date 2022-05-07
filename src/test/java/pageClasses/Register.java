@@ -105,6 +105,10 @@ public class Register extends BasePage {
 	@FindBy(xpath="//div[@class='alert alert-danger']//parent::ol")
 	public WebElement error_message ;
 	
+	@FindBy(xpath="//a[@title='Log in to your customer account']")
+	public WebElement signInbtn_click;
+	
+	
 	
 	
 	@FindBy(xpath="//a[@title='Log me out']")
@@ -188,6 +192,8 @@ public class Register extends BasePage {
 		btn_register.click();
 		Thread.sleep(3000);
 		System.out.println("The error message displayed for already registered user : "+error_message.getText());
+		Thread.sleep(3000);
+		signInbtn_click.click();
 		//signout.click();
 		/*Alert alert=driver.switchTo().alert();
 		String alertmsg=driver.switchTo().alert().getText();

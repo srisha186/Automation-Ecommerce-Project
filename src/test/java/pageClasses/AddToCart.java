@@ -57,7 +57,7 @@ public class AddToCart extends BasePage {
 		
 		//WebDriverWait wait=new WebDriverWait(driver, 10);
 		//wait.until(ExpectedConditions.visibilityOf(mouse_women));
-
+		Thread.sleep(3000);
 		Actions action = new Actions(driver);
 		action.moveToElement(mouse_women).build().perform();
 		Thread.sleep(3000);

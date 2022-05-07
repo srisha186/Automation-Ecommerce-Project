@@ -29,12 +29,11 @@ public class TC_Register extends BaseClass {
 	reg.checkbox();
 	reg.address();
 	
-	String actualtitle="Login - My Store";
+	/*String actualtitle="Login - My Store";
 	String expectedtitle=driver.getTitle();
 	Assert.assertEquals(actualtitle, expectedtitle);
-	System.out.println("Register page Expected title is: " +expectedtitle);
-	SignIn st = new SignIn(driver);
-	st.signIn();
+	System.out.println("Register page Expected title is: " +expectedtitle);*/
+	
 	}
 	
 }
