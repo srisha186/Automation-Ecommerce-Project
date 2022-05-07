@@ -24,11 +24,15 @@ public class TC002_VerifyLogin extends BaseClass {
 
 		AccountLogin log = new AccountLogin(driver);
 		log.forgotPassword();
+		test.log(LogStatus.INFO, "forgotPassword Clicked");
+
 		log.login();
-		//test.log(LogStatus.INFO," Account Logged in Successfully");
+		//test.log(LogStatus.INFO, "login Clicked");
+
+		test.log(LogStatus.INFO," Account Logged in Successfully");
 	//	softAssert.assertTrue(true);
 	//	softAssert.assertAll();
-		System.out.println("softAssert Method Was Ended");
+		//System.out.println("softAssert Method Was Ended");
 
 
 		//Thread.sleep(3000);

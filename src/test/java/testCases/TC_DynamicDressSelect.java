@@ -2,16 +2,18 @@ package testCases;
 
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.SummerDress;
 
 
-public class TC_SummerDress extends BaseClass {
+public class TC_DynamicDressSelect extends BaseClass {
 	
 
 	@Test
 	public void checkout() throws InterruptedException {
-		
+
 		/*SignIn st = new SignIn(driver);
 		st.signIn();
 		
@@ -20,6 +22,8 @@ public class TC_SummerDress extends BaseClass {
 
 		SummerDress dress=new SummerDress(driver);
 		dress.itemcenter();
+		test.log(LogStatus.INFO, "Dashboard Links Clicked");
+
 			}
 
 	

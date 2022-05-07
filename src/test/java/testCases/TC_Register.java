@@ -3,6 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 
 import base.BaseClass;
 import pageClasses.Register;
@@ -23,6 +24,8 @@ public class TC_Register extends BaseClass {
 		
 
 	Register reg = new Register(driver);
+	test.log(LogStatus.INFO, "Register Functioanlity is verified with error message"+reg.error_message.getText());
+
 	reg.register();
 	reg.personalInfo();
 	reg.date();

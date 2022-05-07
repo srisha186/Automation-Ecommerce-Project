@@ -20,6 +20,8 @@ public class TC003_ContactUs extends BaseClass {
 
 		ContactUs us = new ContactUs(driver);
 		us.contactUs();
+		test.log(LogStatus.INFO, "Contact Us Clicked");
+
 
 		/*Assert.assertTrue(true, "Customer service - Contact us");
 		// Assert.assertTrue(us.txt_display.isDisplayed());

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\resources\runner\datadriventestng.xml</span>
+                    <span>C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\resources\runner\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC_Register" hash-for-method="register">register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +116,47 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.DD_VerifyLogin" hash-for-method="login(abcsri70@gmail.com, aaaaa)">login(abcsri70@gmail.com, aaaaa)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC003_ContactUs" hash-for-method="contactNo">contactNo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.DD_VerifyLogin" hash-for-method="login(abcya@gmail.com, cccccc)">login(abcya@gmail.com, cccccc)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC006_CenterColumLinks" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.DD_VerifyLogin" hash-for-method="login(automationdemo18@gmail.com, @autodemo18)">login(automationdemo18@gmail.com, @autodemo18)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC002_VerifyLogin" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.DD_FinalVerifyRegister" hash-for-method="register(John, Smith, johnsmith@gmail.com, abcde, John, Smith, bloor, squareOne, aaaa, Richmond, Alabama , la...)">register(John, Smith, johnsmith@gmail.com, abcde, John, Smith, bloor, squareOne, aaaa, Richmond, Alabama , la...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC008_VerifyLogo" hash-for-method="logo">logo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.DD_FinalVerifyRegister" hash-for-method="register(Tony, John, tony@gmail.com, ccccc, Tony, John, dixie, Burnhamthrope, bbbb, vermon, Alaska, krjrj, We...)">register(Tony, John, tony@gmail.com, ccccc, Tony, John, dixie, Burnhamthrope, bbbb, vermon, Alaska, krjrj, We...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC_AddtocartMuliple" hash-for-method="multipleAddCart">multipleAddCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC001_SignIn" hash-for-method="signIn">signIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC004_SinglePdtCart" hash-for-method="singlepdtAdd">singlepdtAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC_AddtocartMuliple" hash-for-method="sumofproducts">sumofproducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.TC_VerifyLogout" hash-for-method="verifyLogout">verifyLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,30 +171,60 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.DD_FinalVerifyRegister</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC_Register</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="register(John, Smith, johnsmith@gmail.com, abcde, John, Smith, bloor, squareOne, aaaa, Richmond, Alabama , la...)">
-                  </a> <!-- register(John, Smith, johnsmith@gmail.com, abcde, John, Smith, bloor, squareOne, aaaa, Richmond, Alabama , la...) -->
+                  <a name="register">
+                  </a> <!-- register -->
                   <span class="method-name">register</span>
-                  <span class="parameters">(John, Smith, johnsmith@gmail.com, abcde, John, Smith, bloor, squareOne, aaaa, Richmond, Alabama , lasdas, Hello , 3434343.0, 3673827, ShoppingMall)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger&apos;]//parent::ol&quot;}
+  (Session info: chrome=101.0.4951.54)
+  (Driver info: chromedriver=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-PPOL0UJ&apos;, ip: &apos;10.0.0.155&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50558}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\karth\AppData\Local\Temp\scoped_dir28876_1652807639}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=101.0.4951.54, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3b40be573de9625fae49e2130cb33f4c
+*** Element info: {Using=xpath, value=//div[@class=&apos;alert alert-danger&apos;]//parent::ol}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at testCases.TC_Register.register(TC_Register.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify Data Driven Test cases from Excel)                  </em>
+(Verify Register Functionality )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC002_VerifyLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="register(Tony, John, tony@gmail.com, ccccc, Tony, John, dixie, Burnhamthrope, bbbb, vermon, Alaska, krjrj, We...)">
-                  </a> <!-- register(Tony, John, tony@gmail.com, ccccc, Tony, John, dixie, Burnhamthrope, bbbb, vermon, Alaska, krjrj, We...) -->
-                  <span class="method-name">register</span>
-                  <span class="parameters">(Tony, John, tony@gmail.com, ccccc, Tony, John, dixie, Burnhamthrope, bbbb, vermon, Alaska, krjrj, Welcome, 36362352, 383732.0, BusStop)</span>
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                   <em>
-(Verify Data Driven Test cases from Excel)                  </em>
+(Verify Login Functionality and Forgot Password Link works as Expected)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,37 +232,127 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.DD_VerifyLogin</span>
+              <span class="class-name">testCases.TC001_SignIn</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(abcsri70@gmail.com, aaaaa)">
-                  </a> <!-- login(abcsri70@gmail.com, aaaaa) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(abcsri70@gmail.com, aaaaa)</span>
+                  <a name="signIn">
+                  </a> <!-- signIn -->
+                  <span class="method-name">signIn</span>
                   <em>
-(Verify Data Driven Test cases for Login Functionality)                  </em>
+(Verify sign in button is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC008_VerifyLogo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logo">
+                  </a> <!-- logo -->
+                  <span class="method-name">logo</span>
+                  <em>
+(Verify Company logo is navigated to homepage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_AddtocartMuliple</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multipleAddCart">
+                  </a> <!-- multipleAddCart -->
+                  <span class="method-name">multipleAddCart</span>
+                  <em>
+(verify AddToCart Functionality by adding multiple products)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login(abcya@gmail.com, cccccc)">
-                  </a> <!-- login(abcya@gmail.com, cccccc) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(abcya@gmail.com, cccccc)</span>
+                  <a name="sumofproducts">
+                  </a> <!-- sumofproducts -->
+                  <span class="method-name">sumofproducts</span>
                   <em>
-(Verify Data Driven Test cases for Login Functionality)                  </em>
+(verify sumofproducts added and value is printed Dynamically according to products)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC004_SinglePdtCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(automationdemo18@gmail.com, @autodemo18)">
-                  </a> <!-- login(automationdemo18@gmail.com, @autodemo18) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(automationdemo18@gmail.com, @autodemo18)</span>
+                  <a name="singlepdtAdd">
+                  </a> <!-- singlepdtAdd -->
+                  <span class="method-name">singlepdtAdd</span>
                   <em>
-(Verify Data Driven Test cases for Login Functionality)                  </em>
+(Verify a single product is added successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_VerifyLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogout">
+                  </a> <!-- verifyLogout -->
+                  <span class="method-name">verifyLogout</span>
+                  <em>
+(Verify Log out Functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC003_ContactUs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactNo">
+                  </a> <!-- contactNo -->
+                  <span class="method-name">contactNo</span>
+                  <em>
+(Verify Contact us page is navigated to corresponding page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC006_CenterColumLinks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <em>
+(Verify Dashboard links are opened in child windows)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,7 +360,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\resources\runner\datadriventestng.xml</span>
+            <span class="header-content">C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\resources\runner\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -216,10 +370,17 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;base.CustomListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.DD_FinalVerifyRegister&quot;/&gt;
-      &lt;class name=&quot;testCases.DD_VerifyLogin&quot;/&gt;
+      &lt;class name=&quot;testCases.TC001_SignIn&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_Register&quot;/&gt;
+      &lt;class name=&quot;testCases.TC002_VerifyLogin&quot;/&gt;
+      &lt;class name=&quot;testCases.TC006_CenterColumLinks&quot;/&gt;
+      &lt;class name=&quot;testCases.TC003_ContactUs&quot;/&gt;
+      &lt;class name=&quot;testCases.TC008_VerifyLogo&quot;/&gt;
+      &lt;class name=&quot;testCases.TC004_SinglePdtCart&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_AddtocartMuliple&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_VerifyLogout&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -233,7 +394,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -259,32 +420,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'register')
-data.setCell(0, 2, 'testCases.DD_FinalVerifyRegister')
-data.setCell(0, 3, 14218);
+data.setCell(0, 2, 'testCases.TC_Register')
+data.setCell(0, 3, 30061);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'register')
-data.setCell(1, 2, 'testCases.DD_FinalVerifyRegister')
-data.setCell(1, 3, 9821);
+data.setCell(1, 1, 'multipleAddCart')
+data.setCell(1, 2, 'testCases.TC_AddtocartMuliple')
+data.setCell(1, 3, 24495);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
-data.setCell(2, 2, 'testCases.DD_VerifyLogin')
-data.setCell(2, 3, 5511);
+data.setCell(2, 1, 'singlepdtAdd')
+data.setCell(2, 2, 'testCases.TC004_SinglePdtCart')
+data.setCell(2, 3, 19748);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'testCases.DD_VerifyLogin')
-data.setCell(3, 3, 2611);
+data.setCell(3, 2, 'testCases.TC002_VerifyLogin')
+data.setCell(3, 3, 8894);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'login')
-data.setCell(4, 2, 'testCases.DD_VerifyLogin')
-data.setCell(4, 3, 2145);
+data.setCell(4, 2, 'testCases.TC006_CenterColumLinks')
+data.setCell(4, 3, 8216);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'contactNo')
+data.setCell(5, 2, 'testCases.TC003_ContactUs')
+data.setCell(5, 3, 5117);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'sumofproducts')
+data.setCell(6, 2, 'testCases.TC_AddtocartMuliple')
+data.setCell(6, 3, 4843);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logo')
+data.setCell(7, 2, 'testCases.TC008_VerifyLogo')
+data.setCell(7, 3, 4475);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'signIn')
+data.setCell(8, 2, 'testCases.TC001_SignIn')
+data.setCell(8, 3, 2079);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLogout')
+data.setCell(9, 2, 'testCases.TC_VerifyLogout')
+data.setCell(9, 3, 1158);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -299,11 +480,74 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.DD_VerifyLogin</span>
+              <span class="ignored-class-name">testCases.TC002_VerifyLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC008_VerifyLogo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_AddtocartMuliple</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC004_SinglePdtCart</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC003_ContactUs</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_VerifyLogout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC006_CenterColumLinks</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_Register</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -319,40 +563,83 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.DD_FinalVerifyRegister</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC001_SignIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">register(John, Smith, johnsmith@gmail.com, abcde, John, Smith, bloor, squareOne, aaaa, Richmond, Alabama , la...)</span>
-                <span class="method-start">6738 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">register(Tony, John, tony@gmail.com, ccccc, Tony, John, dixie, Burnhamthrope, bbbb, vermon, Alaska, krjrj, We...)</span>
-                <span class="method-start">21192 ms</span>
+                <span class="method-name">signIn</span>
+                <span class="method-start">6482 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.DD_VerifyLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC_Register</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">login(abcsri70@gmail.com, aaaaa)</span>
-                <span class="method-start">31097 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login(abcya@gmail.com, cccccc)</span>
-                <span class="method-start">33266 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login(automationdemo18@gmail.com, @autodemo18)</span>
-                <span class="method-start">35901 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">register</span>
+                <span class="method-start">8983 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.DD_FinalVerifyRegister</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC002_VerifyLogin</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">39407 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC006_CenterColumLinks</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">48348 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC003_ContactUs</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">contactNo</span>
+                <span class="method-start">56599 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC008_VerifyLogo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logo</span>
+                <span class="method-start">61764 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC004_SinglePdtCart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">singlepdtAdd</span>
+                <span class="method-start">66283 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_VerifyLogout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLogout</span>
+                <span class="method-start">86077 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_AddtocartMuliple</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">multipleAddCart</span>
+                <span class="method-start">87266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sumofproducts</span>
+                <span class="method-start">111787 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC001_SignIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41470 ms</span>
+                <span class="method-start">116700 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

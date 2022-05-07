@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.AccountLogin;
 import pageClasses.LinksCenterColumn;
@@ -26,6 +28,8 @@ public class TC006_CenterColumLinks extends BaseClass {
 
 		LinksCenterColumn link = new LinksCenterColumn(driver);
 		link.rowcenter();
+		test.log(LogStatus.INFO, "Dashboard Links Clicked");
+
 		softAssert.assertAll();
 		System.out.println("softAssert Method Was Passed and all child windows closed after completion");
 

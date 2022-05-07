@@ -3,6 +3,8 @@ package testCases;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.Register;
 import pageClasses.SignIn;
@@ -18,7 +20,7 @@ public class DD_FinalVerifyRegister extends BaseClass {
 			String txtFieldadditionalinfo, String txtFieldhomephone, String txtFieldmobilephone,
 			String txtFieldreference) throws InterruptedException {
 		SoftAssert softAssert = new SoftAssert();
-		System.out.println("softAssert Method Was Started");
+		System.out.println("softAssert Method Was Started for Data Driven Register ");
 
 		SignIn st = new SignIn(driver);
 		st.signIn();
@@ -30,6 +32,8 @@ public class DD_FinalVerifyRegister extends BaseClass {
 		regi.paramRegister2(txtfirstname, txtlastname, txtregisteremail, txtpassword, addressfirstname, addresslastName,
 				addresscompany, txtFieldaddress, txtFieldaddress2, txtFieldcity, dropdownstate, txtFieldpostalcode,
 				txtFieldadditionalinfo, txtFieldhomephone, txtFieldmobilephone, txtFieldreference);
+		test.log(LogStatus.INFO, "Data Driven Register verified");
+
 		// test.appendChild(regi.paramRegister2(txtfirstname, txtlastname,
 		// txtregisteremail, txtpassword, addressfirstname, addresslastName,
 		// addresscompany, txtFieldaddress, txtFieldaddress2, txtFieldcity,

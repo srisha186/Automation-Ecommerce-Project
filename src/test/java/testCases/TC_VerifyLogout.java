@@ -24,6 +24,8 @@ public class TC_VerifyLogout extends BaseClass {
 		//log.login();
 		Signout out = new Signout(driver);
 		out.signOut();
+		test.log(LogStatus.INFO, "Sign Out  is Clicked");
+
 		
 		softAssert.assertAll();
 		System.out.println("softAssert Method Was Passed for Logout");

@@ -4,6 +4,8 @@ package testCases;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.AccountLogin;
 import pageClasses.SignIn;
@@ -21,6 +23,9 @@ public class DD_VerifyLogin extends BaseClass {
 
 		AccountLogin log = new AccountLogin(driver);
 		log.loginParametrized(email_address, password);
+		test.log(LogStatus.INFO, "Data Driven Login");
+
+		
 		softAssert.assertTrue(true);
 		softAssert.assertAll();
 				System.out.println("softAssert Method Was Passed with condition");

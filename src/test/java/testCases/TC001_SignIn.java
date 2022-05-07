@@ -3,6 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 
 import base.BaseClass;
 import pageClasses.SignIn;
@@ -17,10 +18,11 @@ public class TC001_SignIn extends BaseClass   {
 		//test = rep.startTest("Test Started");
 		SignIn st = new SignIn(driver);
 		st.signIn();
+		test.log(LogStatus.INFO, "signIn Clicked");
+
 		System.out.println("signIn clicked");
 		Assert.assertTrue(true, "Authentication");
 		
-		//test.log(LogStatus.INFO, "signIn Clicked");
 
 		/*
 		 * String actualtitle="Login - My Store"; String

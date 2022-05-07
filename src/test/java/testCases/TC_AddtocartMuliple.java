@@ -5,6 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.AccountLogin;
 import pageClasses.AddToCart3;
@@ -12,7 +14,7 @@ import pageClasses.Logo;
 import pageClasses.SignIn;
 
 public class TC_AddtocartMuliple extends BaseClass {
-	AddToCart3 add;
+	public AddToCart3 add;
 
 	@Test(priority = 1, description = "verify AddToCart Functionality by adding multiple products")
 	public void multipleAddCart() throws InterruptedException {
@@ -28,6 +30,8 @@ public class TC_AddtocartMuliple extends BaseClass {
 		System.out.println("softAssert Method Was Started for adding products");
 		add = new AddToCart3(driver);
 		add.firstItem();
+		test.log(LogStatus.INFO, "Multiple items added and sum of products is verified");
+
 		// Assert.assertTrue(true,"Product successfully added to your shopping cart");
 		// System.out.println("verified Product successfully added to your shopping cart
 		// message");
@@ -46,7 +50,7 @@ public class TC_AddtocartMuliple extends BaseClass {
 		SoftAssert softAssert = new SoftAssert();
 		System.out.println("softAssert Method Was Started for sumof products");
 		add.getsumOfProducts();
-		System.out.println("Expected Value" +add.expected_total.getText());
+		System.out.println("Expected Value "+ add.expected_total.getText());
 		softAssert.assertTrue(true);
 
 		softAssert.assertAll();

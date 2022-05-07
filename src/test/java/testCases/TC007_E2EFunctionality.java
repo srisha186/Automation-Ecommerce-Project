@@ -24,8 +24,11 @@ public class TC007_E2EFunctionality extends BaseClass {
 		AccountLogin log = new AccountLogin(driver);
 		log.login();
 
+
 		add = new Checkout(driver);
 		add.dresses();
+		test.log(LogStatus.INFO, "first item clicked ");
+
 		System.out.println("Single product is added");
 		//test.log(LogStatus.INFO, "Sign In Started");
 
@@ -66,29 +69,41 @@ public class TC007_E2EFunctionality extends BaseClass {
 		Assert.assertTrue(true, "Shopping-cart summary");
 		System.out.println("Summary Page is verified with text Shopping-cart summary");
 		add.summary();
+		test.log(LogStatus.INFO, "verify summary page");
+
 	}
 
 	@Test(priority = 3, description = "verify address page")
 	public void address() throws InterruptedException {
+		
+		add.address();
+		test.log(LogStatus.INFO, "verify address page");
+
+		
 		Assert.assertTrue(true, "Addresses");
 		System.out.println("Address Page is verified and assert passed");
-		add.address();
+		
 
 	}
 
 	@Test(priority = 4, description = "verify shipping page")
 	public void shipping() throws InterruptedException {
+		
+		add.shipping();
 		Assert.assertTrue(true, "Shipping");
 		System.out.println("Shipping page is verified with text ");
-		add.shipping();
+		test.log(LogStatus.INFO, "verify shipping page");
+
 
 	}
 
 	@Test(priority = 5, description = "verify payment page")
 	public void payment() throws InterruptedException {
+		
+		add.payment();
 		Assert.assertTrue(true, "Please choose your payment method");
 		System.out.println("verified payment method page");
-		add.payment();
+		test.log(LogStatus.INFO, "verify payment page");
 
 	}
 
@@ -97,6 +112,8 @@ public class TC007_E2EFunctionality extends BaseClass {
 		Assert.assertTrue(true, "Bank-wire payment");
 		System.out.println("Bank wire payment is selected and verified");
 		add.confirm();
+		test.log(LogStatus.INFO, "verify Confirmation page");
+
 		System.out.println("Confirmation of product is verified");
 
 	}

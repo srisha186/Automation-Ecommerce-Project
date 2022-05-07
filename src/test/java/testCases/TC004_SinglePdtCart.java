@@ -5,6 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.AddToCart;
 
@@ -23,9 +25,13 @@ public class TC004_SinglePdtCart extends BaseClass {
 
 		AddToCart add=new AddToCart(driver);
 		add.mouseover();
+		test.log(LogStatus.INFO, "first item Clicked");
+		
+
 		softAssert.assertTrue(true);
 
 		softAssert.assertAll();
+		
 				System.out.println("softAssert Method Was Passedwith message Product successfully added to your shopping cart");
 		//Assert.assertTrue(true,"Product successfully added to your shopping cart");
 		//System.out.println("verified Product successfully added to your shopping cart message");

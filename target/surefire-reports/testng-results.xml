@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54201" started-at="2022-05-07T00:19:28Z" finished-at="2022-05-07T00:20:22Z">
+  <suite name="Suite" duration-ms="54355" started-at="2022-05-07T00:36:30Z" finished-at="2022-05-07T00:37:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54201" started-at="2022-05-07T00:19:28Z" finished-at="2022-05-07T00:20:22Z">
+    <test name="Test" duration-ms="54355" started-at="2022-05-07T00:36:30Z" finished-at="2022-05-07T00:37:25Z">
       <class name="testCases.TC007_E2EFunctionality">
-        <test-method status="PASS" signature="init()[pri:0, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="init" is-config="true" duration-ms="4315" started-at="2022-05-06T20:19:24Z" finished-at="2022-05-06T20:19:28Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="init" is-config="true" duration-ms="4819" started-at="2022-05-06T20:36:25Z" finished-at="2022-05-06T20:36:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="checkout()[pri:1, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="checkout" duration-ms="33069" started-at="2022-05-06T20:19:28Z" description="Verify End To End Functionality of a single product till Confirmation page" finished-at="2022-05-06T20:20:01Z">
+        <test-method status="PASS" signature="checkout()[pri:1, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="checkout" duration-ms="33341" started-at="2022-05-06T20:36:30Z" description="Verify End To End Functionality of a single product till Confirmation page" finished-at="2022-05-06T20:37:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkout -->
-        <test-method status="PASS" signature="summary()[pri:2, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="summary" duration-ms="4307" started-at="2022-05-06T20:20:01Z" description="verify summary page" finished-at="2022-05-06T20:20:05Z">
+        <test-method status="PASS" signature="summary()[pri:2, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="summary" duration-ms="3820" started-at="2022-05-06T20:37:04Z" description="verify summary page" finished-at="2022-05-06T20:37:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- summary -->
-        <test-method status="PASS" signature="address()[pri:3, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="address" duration-ms="4002" started-at="2022-05-06T20:20:05Z" description="verify address page" finished-at="2022-05-06T20:20:09Z">
+        <test-method status="PASS" signature="address()[pri:3, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="address" duration-ms="3847" started-at="2022-05-06T20:37:08Z" description="verify address page" finished-at="2022-05-06T20:37:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- address -->
-        <test-method status="PASS" signature="shipping()[pri:4, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="shipping" duration-ms="3992" started-at="2022-05-06T20:20:09Z" description="verify shipping page" finished-at="2022-05-06T20:20:13Z">
+        <test-method status="PASS" signature="shipping()[pri:4, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="shipping" duration-ms="3965" started-at="2022-05-06T20:37:12Z" description="verify shipping page" finished-at="2022-05-06T20:37:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shipping -->
-        <test-method status="PASS" signature="payment()[pri:5, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="payment" duration-ms="3843" started-at="2022-05-06T20:20:13Z" description="verify payment page" finished-at="2022-05-06T20:20:17Z">
+        <test-method status="PASS" signature="payment()[pri:5, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="payment" duration-ms="3970" started-at="2022-05-06T20:37:16Z" description="verify payment page" finished-at="2022-05-06T20:37:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- payment -->
-        <test-method status="PASS" signature="confirmation()[pri:6, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="confirmation" duration-ms="4958" started-at="2022-05-06T20:20:17Z" description="verify confirmation  page" finished-at="2022-05-06T20:20:22Z">
+        <test-method status="PASS" signature="confirmation()[pri:6, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="confirmation" duration-ms="5063" started-at="2022-05-06T20:37:20Z" description="verify confirmation  page" finished-at="2022-05-06T20:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="tearDown" is-config="true" duration-ms="962" started-at="2022-05-06T20:20:22Z" finished-at="2022-05-06T20:20:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.TC007_E2EFunctionality@4e50c791]" name="tearDown" is-config="true" duration-ms="933" started-at="2022-05-06T20:37:25Z" finished-at="2022-05-06T20:37:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

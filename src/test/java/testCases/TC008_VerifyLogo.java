@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.BaseClass;
 import pageClasses.Logo;
 
@@ -19,6 +21,8 @@ public class TC008_VerifyLogo extends BaseClass {
 		
 	Logo lo=new Logo(driver);
 	lo.logo();
+	test.log(LogStatus.INFO, "verify logo page");
+
 	softAssert.assertTrue(true);
 	softAssert.assertAll();
 	System.out.println("softAssert Method Was Passed ");
