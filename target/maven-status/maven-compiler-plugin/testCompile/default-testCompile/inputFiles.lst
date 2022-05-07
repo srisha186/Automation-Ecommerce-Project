@@ -21,7 +21,6 @@ C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testC
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\utilities\Utilities.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\base\BasePage.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\pageClasses\AccountLogin.java
-C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testCases\TC_SummerDress.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\utilities\ExtentManager.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\base\BaseClass.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\pageClasses\AddToCart3.java
@@ -30,4 +29,5 @@ C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\pageC
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testCases\TC_AddtocartMuliple.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testCases\TC001_SignIn.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testCases\TC007_E2EFunctionality.java
+C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testCases\TC_DynamicDressSelect.java
 C:\Users\karth\eclipse-workspace\Automated Ecommerce Project\src\test\java\testCases\TC006_CenterColumLinks.java

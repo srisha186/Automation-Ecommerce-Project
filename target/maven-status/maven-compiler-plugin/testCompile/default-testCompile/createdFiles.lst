@@ -14,9 +14,9 @@ pageClasses\Logo.class
 testCases\TC004_SinglePdtCart.class
 pageClasses\AccountLogin2.class
 base\BaseClass.class
-testCases\TC_SummerDress.class
 pageClasses\AccountLogin.class
 testCases\TC008_VerifyLogo.class
+testCases\TC_DynamicDressSelect.class
 testCases\DD_FinalVerifyRegister.class
 utilities\Xls_Reader.class
 testCases\TC006_CenterColumLinks.class
