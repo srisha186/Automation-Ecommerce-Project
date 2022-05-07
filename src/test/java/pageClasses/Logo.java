@@ -16,8 +16,9 @@ public class Logo extends BasePage {
 	@FindBy(xpath = "//img[@class='logo img-responsive']")
 	public WebElement click_logo;
 
-	public void logo() {
+	public void logo() throws InterruptedException {
 		click_logo.click();
+		Thread.sleep(3000);
 	}
 
 }

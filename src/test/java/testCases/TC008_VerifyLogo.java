@@ -12,7 +12,7 @@ public class TC008_VerifyLogo extends BaseClass {
 	
 
 	@Test(description = "Verify Company logo is navigated to homepage")
-	public void logo() {
+	public void logo() throws InterruptedException {
 		SoftAssert softAssert = new SoftAssert();
 		System.out.println("softAssert Method Was Started for Logo Verification");
 

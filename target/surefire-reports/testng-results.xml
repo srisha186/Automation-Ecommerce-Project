@@ -1,243 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28451" started-at="2022-05-06T23:52:23Z" finished-at="2022-05-06T23:52:52Z">
+  <suite name="Suite" duration-ms="54201" started-at="2022-05-07T00:19:28Z" finished-at="2022-05-07T00:20:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="28451" started-at="2022-05-06T23:52:23Z" finished-at="2022-05-06T23:52:52Z">
-      <class name="testCases.DD_FinalVerifyRegister">
-        <test-method status="PASS" signature="init()[pri:0, instance:testCases.DD_FinalVerifyRegister@58a9760d]" name="init" is-config="true" duration-ms="4915" started-at="2022-05-06T19:52:18Z" finished-at="2022-05-06T19:52:23Z">
+    <test name="Test" duration-ms="54201" started-at="2022-05-07T00:19:28Z" finished-at="2022-05-07T00:20:22Z">
+      <class name="testCases.TC007_E2EFunctionality">
+        <test-method status="PASS" signature="init()[pri:0, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="init" is-config="true" duration-ms="4315" started-at="2022-05-06T20:19:24Z" finished-at="2022-05-06T20:19:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.DD_FinalVerifyRegister@58a9760d]" name="register" duration-ms="10437" started-at="2022-05-06T19:52:24Z" description="Verify Data Driven Test cases from Excel" data-provider="reg2" finished-at="2022-05-06T19:52:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Smith]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[johnsmith@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[abcde]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Smith]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[bloor]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[squareOne]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[aaaa]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Richmond]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Alabama ]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[lasdas]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Hello ]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[3434343.0]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[3673827]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[ShoppingMall]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="checkout()[pri:1, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="checkout" duration-ms="33069" started-at="2022-05-06T20:19:28Z" description="Verify End To End Functionality of a single product till Confirmation page" finished-at="2022-05-06T20:20:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.DD_FinalVerifyRegister@58a9760d]" name="register" duration-ms="9488" started-at="2022-05-06T19:52:35Z" description="Verify Data Driven Test cases from Excel" data-provider="reg2" finished-at="2022-05-06T19:52:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tony]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[tony@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[ccccc]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Tony]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[dixie]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Burnhamthrope]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[bbbb]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[vermon]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Alaska]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[krjrj]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Welcome]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[36362352]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[383732.0]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[BusStop]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- checkout -->
+        <test-method status="PASS" signature="summary()[pri:2, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="summary" duration-ms="4307" started-at="2022-05-06T20:20:01Z" description="verify summary page" finished-at="2022-05-06T20:20:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.DD_FinalVerifyRegister@58a9760d]" name="tearDown" is-config="true" duration-ms="1087" started-at="2022-05-06T19:52:52Z" finished-at="2022-05-06T19:52:53Z">
+        </test-method> <!-- summary -->
+        <test-method status="PASS" signature="address()[pri:3, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="address" duration-ms="4002" started-at="2022-05-06T20:20:05Z" description="verify address page" finished-at="2022-05-06T20:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- address -->
+        <test-method status="PASS" signature="shipping()[pri:4, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="shipping" duration-ms="3992" started-at="2022-05-06T20:20:09Z" description="verify shipping page" finished-at="2022-05-06T20:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shipping -->
+        <test-method status="PASS" signature="payment()[pri:5, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="payment" duration-ms="3843" started-at="2022-05-06T20:20:13Z" description="verify payment page" finished-at="2022-05-06T20:20:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payment -->
+        <test-method status="PASS" signature="confirmation()[pri:6, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="confirmation" duration-ms="4958" started-at="2022-05-06T20:20:17Z" description="verify confirmation  page" finished-at="2022-05-06T20:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.TC007_E2EFunctionality@1e66f1f5]" name="tearDown" is-config="true" duration-ms="962" started-at="2022-05-06T20:20:22Z" finished-at="2022-05-06T20:20:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DD_FinalVerifyRegister -->
-      <class name="testCases.DD_VerifyLogin">
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:testCases.DD_VerifyLogin@71e9ddb4]" name="login" duration-ms="1975" started-at="2022-05-06T19:52:44Z" description="Verify Data Driven Test cases for Login Functionality" data-provider="dp" finished-at="2022-05-06T19:52:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcsri70@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[aaaaa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:testCases.DD_VerifyLogin@71e9ddb4]" name="login" duration-ms="2332" started-at="2022-05-06T19:52:46Z" description="Verify Data Driven Test cases for Login Functionality" data-provider="dp" finished-at="2022-05-06T19:52:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcya@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cccccc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:testCases.DD_VerifyLogin@71e9ddb4]" name="login" duration-ms="2934" started-at="2022-05-06T19:52:49Z" description="Verify Data Driven Test cases for Login Functionality" data-provider="dp" finished-at="2022-05-06T19:52:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[automationdemo18@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[@autodemo18]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- testCases.DD_VerifyLogin -->
+      </class> <!-- testCases.TC007_E2EFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
